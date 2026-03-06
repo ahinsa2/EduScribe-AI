@@ -23,8 +23,8 @@ from app.utils.helpers import validate_url
 router = APIRouter(tags=["Video Processing"])
 
 
-@router.post(
-    "/process-video",
+@router.post("/summarize",
+    #"/process-video",
     response_model=VideoResponse,
     summary="Process a YouTube lecture and return AI-generated structured notes",
     response_description="Structured educational notes with sections and keywords",
