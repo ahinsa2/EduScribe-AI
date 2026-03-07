@@ -47,10 +47,21 @@ class TranscriptUnavailableError(RuntimeError):
 
 # ── Shared API instance ────────────────────────────────────────────────────────
 # v1.x+ requires an instance; creating once at module level is safe.
-import os
-_COOKIES = os.path.join(os.path.dirname(__file__), "cookies.txt")
-_ytt = YouTubeTranscriptApi(cookie_path=_COOKIES)
+import os, tempfile, http.cookiejar, requests
 
+_cookie_content = os.getenv("YOUTUBE_COOKIES", "")
+
+if _cookie_content:
+    _tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".txt", mode="w")
+    _tmp.write(_cookie_content)
+    _tmp.close()
+    _jar = http.cookiejar.MozillaCookieJar(_tmp.name)
+    _jar.load()
+    _session = requests.Session()
+    _session.cookies = _jar
+    _ytt = YouTubeTranscriptApi(http_client=_session)
+else:
+    _ytt = YouTubeTranscriptApi()
 
 # ── Video ID Extraction ────────────────────────────────────────────────────────
 
