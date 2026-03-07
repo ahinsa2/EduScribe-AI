@@ -49,20 +49,16 @@ class TranscriptUnavailableError(RuntimeError):
 # v1.x+ requires an instance; creating once at module level is safe.
 import os, tempfile, http.cookiejar, requests
 
-_cookie_content = os.getenv("YOUTUBE_COOKIES", "")
+_COOKIE_PATH = "/etc/secrets/cookies.txt"
 
-if _cookie_content:
-    _tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".txt", mode="w")
-    _tmp.write(_cookie_content)
-    _tmp.close()
-    _jar = http.cookiejar.MozillaCookieJar(_tmp.name)
+if os.path.exists(_COOKIE_PATH):
+    _jar = http.cookiejar.MozillaCookieJar(_COOKIE_PATH)
     _jar.load()
     _session = requests.Session()
     _session.cookies = _jar
     _ytt = YouTubeTranscriptApi(http_client=_session)
 else:
     _ytt = YouTubeTranscriptApi()
-
 # ── Video ID Extraction ────────────────────────────────────────────────────────
 
 def extract_video_id(url: str) -> str:
