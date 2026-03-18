@@ -28,19 +28,19 @@ No more rewatching. No more scattered notes. Just focused, efficient learning.
 ## Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](youtube_summarizer/screenshots/homepage.png)
 > *Clean URL input screen — paste your YouTube lecture link and hit Generate.*
 
 ### Summary Output
-![Summary Output](screenshots/summary-output.png)
+![Summary Output](youtube_summarizer/screenshots/summary-output.png)
 > *AI-generated summary with structured notes organised by topic.*
 
 ### Flashcards
-![Flashcards](screenshots/flashcards.png)
+![Flashcards](youtube_summarizer/screenshots/flashcards.png)
 > *Flip-card revision mode with progress indicator.*
 
 ### Quiz
-![Quiz](screenshots/quiz.png)
+![Quiz](youtube_summarizer/screenshots/quiz.png)
 > *Auto-generated multiple choice quiz with instant answer feedback.*
 
 ---
