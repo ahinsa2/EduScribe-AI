@@ -1,10 +1,10 @@
-# 🧠 EduScribe AI
+# 🧠 EduScribe AI->
 
 **Turn any YouTube lecture into a complete study pack — in seconds.**
 
 ---
 
-## Overview
+## Overview->
 
 EduScribe AI is an AI-powered learning assistant built for students who rely on YouTube to learn. Paste any lecture URL and EduScribe instantly extracts the transcript, processes it with Google Gemini, and delivers a structured summary, organised notes, flashcards, a quiz, and key terms — all in one place.
 
@@ -12,7 +12,7 @@ No more rewatching. No more scattered notes. Just focused, efficient learning.
 
 ---
 
-## Key Features
+## Key Features->
 
 - 📝 **AI Summaries** — Full lecture distilled into a clear academic paragraph
 - 📋 **Structured Notes** — Section-wise bullet points organised by topic
@@ -25,7 +25,7 @@ No more rewatching. No more scattered notes. Just focused, efficient learning.
 
 ---
 
-## Screenshots
+## Screenshots->
 
 ### Homepage
 ![Homepage](youtube_summarizer/screenshots/homepage.png)
@@ -45,7 +45,7 @@ No more rewatching. No more scattered notes. Just focused, efficient learning.
 
 ---
 
-## Tech Stack
+## Tech Stack->
 
 **Frontend**
 - React + JSX, Vite, TailwindCSS, JavaScript ES6+
@@ -62,7 +62,7 @@ No more rewatching. No more scattered notes. Just focused, efficient learning.
 
 ---
 
-## Installation & Setup
+## Installation & Setup->
 
 ### 1. Clone the repository
 
@@ -108,7 +108,7 @@ App live at → `http://localhost:5173`
 
 ---
 
-## Usage
+## Usage->
 
 1. Open the app at `http://localhost:5173`
 2. Paste any YouTube lecture URL into the input field
@@ -125,7 +125,7 @@ https://www.youtube.com/shorts/VIDEO_ID
 
 ---
 
-## Project Structure
+## Project Structure->
 
 ```
 eduscribe-ai/
@@ -148,7 +148,7 @@ eduscribe-ai/
 
 ---
 
-## Future Improvements
+## Future Improvements->
 
 - **PDF Export** — Download your full study pack as a formatted PDF
 - **Playlist Mode** — Process an entire YouTube playlist in one click
