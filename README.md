@@ -158,8 +158,9 @@ eduscribe-ai/
 ---
 
 
-**Ahinsa Mohanty** — [GitHub](https://github.com/ahinsa2) · [LinkedIn](https://linkedin.com/in/your-profile)
+**Ahinsa Mohanty** — [GitHub](https://github.com/ahinsa2) · [LinkedIn](www.linkedin.com/in/ahinsa-mohanty-290765331)
+**Souhardya Banerjee** — [GitHub](https://github.com/souhardya777) · [LinkedIn](https://www.linkedin.com/in/souhardya-banerjee-358216334)
 
 ---
 
-> *EduScribe AI — Turning passive viewers into active learners.*
+> *EduScribe AI — Because Lectures should teach, not just play*
